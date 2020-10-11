@@ -19,46 +19,45 @@ public class Contenido {
         this.generos = generos;
         this.actores = actores;
     }
-    
+
     public String get_id() {
         return _id.toHexString();
-    }
+    }    
 
     public void set_id(ObjectId _id) {
         this._id = _id;
-    }
+    }    
 
     public String getTitulo() {
         return titulo;
-    }
+    }    
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
-    }
+    }    
 
     public List<Genero> getGeneros() {
         return generos;
-    }
+    }    
 
     public void setGeneros(List<Genero> generos) {
         this.generos = generos;
-    }
+    }    
 
     public List<Actor> getActores() {
         return actores;
-    }
+    }    
 
     public void setActores(List<Actor> actores) {
         this.actores = actores;
-    }
+    }    
 
     public List<Director> getDirectores() {
         return directores;
-    }
+    }    
 
     public void setDirectores(List<Director> directores) {
         this.directores = directores;
-    }
-
-
+    }    
+    
 }

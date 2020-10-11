@@ -8,10 +8,12 @@ public class Actor {
     private ObjectId _id;
     private String nombre;
     private String nivel;
-
-    public Actor(String titulo, String nivel2) {
-	}
-
+    
+    public Actor(String nombre, String nivel) {
+        this.nombre = nombre;
+        this.nivel = nivel;
+    }
+    
 	public String getNombre() {
         return nombre;
     }
@@ -35,4 +37,5 @@ public class Actor {
     public void set_id(ObjectId _id) {
         this._id = _id;
     }
+
 }

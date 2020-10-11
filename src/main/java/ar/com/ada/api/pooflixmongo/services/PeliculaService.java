@@ -17,11 +17,11 @@ public class PeliculaService {
 
     public Pelicula crearPelicula(String titulo, List<Director> directores, List<Genero> generos, List<Actor> actores) {
         if(existePelicula(titulo)){
+            return null;
+        }else{
             Pelicula pelicula = new Pelicula(titulo, directores, generos, actores);
             grabar(pelicula);
             return pelicula;
-        }else{
-            return null;
         }
     }
 

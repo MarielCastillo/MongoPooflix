@@ -9,8 +9,9 @@ public class Temporada {
     private int numero;
     private List<Episodio> episodios = new ArrayList<>();
     
-    public Temporada(int numero) {
+    public Temporada(int numero, List<Episodio> episodios) {
         this.numero = numero;
+        this.episodios = episodios;
     }
 
     public int getNumero() {
@@ -28,9 +29,4 @@ public class Temporada {
     public void setEpisodios(List<Episodio> episodios) {
         this.episodios = episodios;
     }
-
-    public void agregarEpisodio(Episodio episodio){
-        this.episodios.add(episodio);
-    }
-
 }

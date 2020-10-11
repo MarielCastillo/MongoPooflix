@@ -17,14 +17,13 @@ public class SerieService {
     @Autowired
     SerieRepository serieRepository;
 
-    public Serie crearSerie(String titulo, List<Director> directores, List<Genero> generos, List<Actor> actores,
-            List<Temporada> temporadas) {
+    public Serie crearSerie(String titulo, List<Director> directores, List<Genero> generos, List<Actor> actores, List<Temporada> temporadas) {
         if (existeSerie(titulo)) {
+            return null;
+        } else {
             Serie serie = new Serie(titulo, directores, generos, actores, temporadas);
             grabar(serie);
             return serie;
-        } else {
-            return null;
         }
     }
 

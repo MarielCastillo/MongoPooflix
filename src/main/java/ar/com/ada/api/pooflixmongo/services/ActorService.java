@@ -18,11 +18,11 @@ public class ActorService {
 
     public Actor crearActor(String nombre, String nivel) {
         if(existeActor(nombre)){
+            return null;
+        }else{
             Actor actor = new Actor(nombre, nivel);
             grabar(actor);
             return actor;
-        }else{
-            return null;
         }
     }
 

@@ -18,11 +18,11 @@ public class DirectorService {
 
     public Director crearDirector(String nombre, String nivel) {
         if(existeDirector(nombre)){
+            return null;
+        }else{
             Director director = new Director(nombre, nivel);
             grabar(director);
             return director;
-        }else{
-            return null;
         }
     }
 

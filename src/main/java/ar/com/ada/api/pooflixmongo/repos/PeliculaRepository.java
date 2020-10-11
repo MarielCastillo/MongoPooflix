@@ -8,5 +8,5 @@ import ar.com.ada.api.pooflixmongo.entities.Pelicula;
 
 @Repository
 public interface PeliculaRepository extends MongoRepository<Pelicula, ObjectId> {
-	Pelicula findByTitulo(String titulo);
+    Pelicula findByTitulo(String titulo);
 }

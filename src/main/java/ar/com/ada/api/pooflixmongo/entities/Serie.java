@@ -5,7 +5,7 @@ import java.util.*;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "Serie")
-public class Serie  extends Contenido {
+public class Serie extends Contenido {
 
     public Serie(String titulo, List<Director> directores, List<Genero> generos, List<Actor> actores, List<Temporada> temporadas) {
         super(titulo, directores, generos, actores);
