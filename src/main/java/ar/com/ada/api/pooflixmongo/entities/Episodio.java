@@ -1,8 +1,5 @@
 package ar.com.ada.api.pooflixmongo.entities;
 
-import org.springframework.data.mongodb.core.mapping.Document;
-
-@Document(collection = "episodios")
 public class Episodio {
     private int numero;
     private String nombre;

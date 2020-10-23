@@ -2,9 +2,6 @@ package ar.com.ada.api.pooflixmongo.entities;
 
 import java.util.*;
 
-import org.springframework.data.mongodb.core.mapping.Document;
-
-@Document(collection = "Temporada")
 public class Temporada {
     private int numero;
     private List<Episodio> episodios = new ArrayList<>();
